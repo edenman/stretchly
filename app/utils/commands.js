@@ -166,7 +166,7 @@ class Command {
         return 1
 
       case 'until-morning':
-        return new UntilMorning(settings).timeUntilMorning()
+        return new UntilMorning(settings).msToSunrise()
 
       default:
         var seconds = Number.parseInt(this.options.duration)
